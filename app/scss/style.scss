@@ -4,8 +4,60 @@
 @import 'libs';
 @import 'global';
 
+.header {
+	position: relative;
+	min-height: 100vh;
+	background-image: url(../images/bg/header-bg-1920.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% top;
+	background-size: cover;
 
+	&__main-text {
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		color: #4D468B;
+		background-color: #fffff0;
+		span {
+			font-size: 28px;
+			font-weight: 600;
+		}
+	}
+	&__tent-city {
 
+	}
+}
+.top-line {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	&__logo {
+		max-width: 150px;
+	}
+	&__nav {
+		ul {
+			display: flex;
+			justify-content: space-around;
+		}
+		li {
+			padding: 0 20px;
+		}
+	}
+	&__btn {
+		button {
+			padding: 6px 12px;
+			cursor: pointer;
+			border: 1px solid transparent;
+			border-radius: 4px;
+			background-color: #f1de44;
+			text-transform: uppercase;
+			border-color: rgb(19, 3, 3);
+		}		
+	}
+}
 
 
 
